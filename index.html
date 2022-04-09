@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultor de Cep</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
 <body>
-    <h1>Consultor de Cep</h1> 
+    <div class="formulario">
+        <h1 class="title has-text-weight-bold">Consultor de Cep</h1> 
 
-    <label>
-        <span>CEP: </span>
-        <input type="text">
-    </label>
+        <label>
+            <span>CEP: </span>
+            <input class="input" type="text">
+        </label>
 
-    <button>Pesquisar CEP</button>
+        <button class="button is-primary mt-4">Pesquisar CEP</button>
 
-    <label>
-        <span>Endereço: </span>
-        <input type="text">
-    </label>
+        <div class="mt-6">
+            <label>
+                <span>Endereço: </span>
+                <input class="input" type="text" disabled>
+            </label>
 
-    <label>
-        <span>Número: </span>
-        <input type="text">
-    </label>
+            <label>
+                <span>Número: </span>
+                <input class="input" type="text">
+            </label>
 
-    <label>
-        <span>Complemento: </span>
-        <input type="text">
-    </label>
+            <label>
+                <span>Complemento: </span>
+                <input class="input" type="text">
+            </label>
 
-    <label>
-        <span>Bairro: </span>
-        <input type="text">
-    </label>
+            <label>
+                <span>Bairro: </span>
+                <input class="input" type="text" disabled>
+            </label>
 
-    <label>
-        <span>Cidade: </span>
-        <input type="text">
-    </label>
+            <label>
+                <span>Cidade: </span>
+                <input class="input" type="text" disabled>
+            </label>
 
-    <label>
-        <span>Estado: </span>
-        <input type="text">
-    </label>
+            <label>
+                <span>Estado: </span>
+                <input class="input" type="text" disabled>
+            </label>
+        </div>
+    </div>
 </body>
 </html>
