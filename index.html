@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="./main.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <div class="formulario">
@@ -15,15 +18,15 @@
 
         <label>
             <span>CEP: </span>
-            <input class="input" type="text">
+            <input id="inputCep" class="input" type="text">
         </label>
 
-        <button class="button is-primary mt-4">Pesquisar CEP</button>
+        <button id="buttonPesquisar" class="button is-primary mt-4">Pesquisar CEP</button>
 
         <div class="mt-6">
             <label>
                 <span>Endereço: </span>
-                <input class="input" type="text" disabled>
+                <input id="inputEndereco" class="input" type="text" disabled>
             </label>
 
             <label>
@@ -38,17 +41,17 @@
 
             <label>
                 <span>Bairro: </span>
-                <input class="input" type="text" disabled>
+                <input id="inputBairro" class="input" type="text" disabled>
             </label>
 
             <label>
                 <span>Cidade: </span>
-                <input class="input" type="text" disabled>
+                <input id="inputCidade" class="input" type="text" disabled>
             </label>
 
             <label>
                 <span>Estado: </span>
-                <input class="input" type="text" disabled>
+                <input id="inputEstado" class="input" type="text" disabled>
             </label>
         </div>
     </div>
